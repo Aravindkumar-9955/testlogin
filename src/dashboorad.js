@@ -1,11 +1,15 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
+import Headers from "./headers";
+import { Mycontext } from "./createcontext";
+import Content from "./content";
 
 const Dashborad = () => {
+
   return (
     <Box>
       {/* Navebar */}
-
+      <Headers />
       <Box
         sx={{
           background: "#fb618640",
@@ -43,6 +47,7 @@ const Dashborad = () => {
           <Typography>hi</Typography>
         </Box>
       </Box>
+      <Content />
     </Box>
   );
 };
